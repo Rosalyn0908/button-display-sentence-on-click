@@ -1,0 +1,68 @@
+<html>
+<body>
+
+<script>
+
+//splits the screen into four sections. Each click on a section displays a sentence inside the clicked section
+$(document).ready(function(){
+    $('#demo').click(function(){
+        $('#demo').append("<p>Hello, you clicked the top left button. </p>");
+    });
+    $('#demo2').click(function(){
+        $('#demo2').append("<p>Hello, you clicked the top right button. </p>");
+    });
+    $('#demo3').click(function(){
+        $('#demo3').append("<p>Hello, you clicked the bottom left button. </p>");
+    });
+    $('#demo4').click(function(){
+        $('#demo4').append("<p>Hello, you clicked the bottom right button. </p>");
+    });
+});
+
+
+</script>			
+
+<style>
+#demo {
+    color: purple;
+    position: absolute;
+	top: 0;
+	left: 0;
+}
+#demo2 {
+    color: violet;
+    position: absolute;
+	top: 0;
+	right: 0%;
+}
+#demo3 {
+    color: blue;
+    position: absolute;
+	bottom: 0%;
+	left: 0;
+}
+#demo4 {
+    color: teal;
+    position: absolute;
+	bottom: 0%;
+	right: 0%;
+}
+
+</style>
+
+
+<p id="demo">
+    <button>Demo 1</button>
+</p>
+<p id="demo2">
+    <button>Demo 2</button>
+</p>
+<p id="demo3">
+    <button>Demo 3</button>
+</p>
+<p id="demo4">
+    <button>Demo 4</button>
+</p>
+
+</body>
+</html>
